@@ -1,0 +1,20 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `components` layer
+ *
+ * “Add more opinionated, complex classes like buttons, form controls, alerts,
+ * etc; the sort of pre-built components you often see in other frameworks that
+ * you might need to override with utility classes.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-components
+ */
+
+.l-container {
+	@apply container mx-auto px-4 py-15;
+}
+
+/* * DaisyUI */
+@plugin "daisyui" {
+	themes:
+		light --default,
+		dracula --prefersdark;
+}
