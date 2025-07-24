@@ -10,7 +10,7 @@ $sliders = get_posts(array(
   <div class="c-slider">
     <div class="l-container py-2">
 
-      <div class="carousel w-full">
+      <div class="carousel w-full h-[600px]">
         <?php $i = 1; ?>
         <?php foreach ($sliders as $post):
           setup_postdata($post); ?>
@@ -18,7 +18,7 @@ $sliders = get_posts(array(
             <img src="<?php the_post_thumbnail_url('wooprj-featured-image') ?>" class="w-full" alt="<?php the_title() ?>" />
             <div class="absolute bottom-[6%] left-1/2 transform -translate-x-1/2 text-center text-white bg-black/40 p-2">
               <div class="text-2xl font-bold md:text-5xl "><?php the_title() ?></div>
-              <div class="text-base/5 font-bold md:text-2xl/7 "><?php the_content('') ?></div>
+              <div class="text-base/5 font-bold md:text-2xl/7 "><?php the_excerpt('') ?></div>
             </div>
           </div>
           <?php $i++; ?>

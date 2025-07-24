@@ -12,7 +12,8 @@
 import recentProductSlider from './components/recent-products-slider';
 import productSlider from './components/product-slider';
 import cart from './components/cart';
-import wishlist from './components/wishlist';
+// import wishlist from './components/wishlist';
+import wishlist from './components/wishlist-api';
 
 // for native js
 document.addEventListener('DOMContentLoaded', () => {

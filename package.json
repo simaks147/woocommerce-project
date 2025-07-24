@@ -32,7 +32,7 @@
 		"watch:tailwind:editor": "npm run development:tailwind:editor -- --watch",
 		"watch:tailwind:editor:extra": "npm run development:tailwind:editor:extra -- --watch",
 		"watch:esbuild": "npm run development:esbuild -- --watch",
-		"watch:browser-sync": "browser-sync start --proxy \"http://localhost:8000\" --files \"theme\" --no-notify --no-inject-changes",
+		"watch:browser-sync": "browser-sync start --proxy \"http://localhost:8010\" --files \"theme\" --no-notify --no-inject-changes",
 		"watch": "run-p \"watch:**\"",
 		"lint:eslint": "npx eslint",
 		"lint:prettier": "npx prettier --check .",
